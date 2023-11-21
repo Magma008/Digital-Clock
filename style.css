@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DS-Digital, "Poppins", sans-serif;
+}
+
+/* ------------------------------------ */
+/* Main Section */
+
+.main {
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.table {
+    background: rgb(113, 63, 17);
+    min-height: 20vh;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    min-height: 22em;
+}
+
+.head {
+    background: #202055;
+    padding: 20px;
+    border: 20px solid #8F8D8E;
+    border-radius: 20px;
+}
+
+.screen {
+    background: #553287;
+    min-height: 13em;
+    padding: 20px;
+    color: #6ffffc;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.bigFont {
+    font-size: 11em;
+}
+
+.animate {
+    animation: animation 1s infinite;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.date h3 {
+    font-family: "Poppins";
+}
+
+.clock {
+    margin: 20px 20px 0px 20px;
+}
+
+.date {
+    background: #553287;
+    color: springgreen;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 15px;
+    padding: 3px;
+}
+
+.second {
+    color: blue;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.seconds {
+    font-size: 50px;
+    background: #62FE6C;
+    padding: 5px;
+    color: blue;
+}
+
+.pm {
+    background: #553287;
+    padding: 5px;
+    font-family: "Poppins";
+    font-size: 30px;
+    height: 100%;
+    color: #62FE6C;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(9, 2fr);
+    align-items: center;
+}
+
+.foot {
+    background: #868485;
+    min-height: 6em;
+}
+
+.hold {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+}
+
+.handle {
+    min-height: 20px;
+    background: #8F8D8E;
+}
+
+@media screen and (max-width: 1210px) {
+    .second {
+        gap: 5px;
+        margin-left: 8px;
+    }
+}
+
+
+@media screen and (max-width: 1110px) {
+    .foot {
+        min-height: 4em;
+    }
+
+    .bigFont {
+        font-size: 9em;
+    }
+
+    .head {
+        padding: 15px;
+    }
+
+    .screen {
+        min-height: 7em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .date {
+        flex-direction: column;
+    } 
+}
+
+@media screen and (max-width: 770px) {
+    .first {
+        display: none;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(7, 2fr);
+        align-items: center;
+    }
+
+    .d700 {
+        display: none;
+    }
+
+    .hold {
+        display: grid;
+        grid-template-columns: repeat(3, 5fr);
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .clock {
+        margin: 10px 10px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .clock {
+        margin: 10px 10px 0px 10px;
+    }
+
+    .screen {
+        min-height: 5em;
+        padding: 10px;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .bigFont {
+        font-size: 6em;
+    }
+
+    .date {
+        display: flex;
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    
+    .seconds {
+        font-size: 25px;
+        padding: 3px;
+    }
+
+    .pm {
+        padding: 3px;
+        font-size: 20px;
+    }
+
+    .center {
+        min-height: 11em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .bigFont {
+        font-size: 5em;
+    }
+
+    .date {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .second {
+        font-size: 22px;
+    }
+
+    .center {
+        min-height: 11em;
+        grid-template-columns: 4fr;
+    }
+
+    .foot {
+        min-height: 2em;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .screen {
+        padding: 5px;
+    }
+    .head {
+        padding: 8px;
+        border: 10px solid #8F8D8E;
+    }
+}
+
+@keyframes animation {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
